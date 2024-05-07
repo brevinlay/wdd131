@@ -27,4 +27,4 @@ if (selectedTheme === "dark"){
 
 }
 // add eventlistener to the themeSelector element here. Use the changeTheme function as the event handler function.
-themeSelector.addEventListener('click', changeTheme);
+themeSelector.addEventListener('change', changeTheme);
