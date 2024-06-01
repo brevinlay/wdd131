@@ -1,0 +1,57 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+:root {
+    --primary-color: #EFC69B;
+    --secondary-color: #AF1B3F;
+    --accent-color: #473144;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Helvetica, Arial, sans-serif;
+    --secondary-font: 'Lora', Impact, serif ;
+    }
+
+.title{
+    color: var(--accent-color);
+    text-align: center;
+}
+.main-nav > li{
+    float: right;
+    display: grid;
+    grid-template-columns: 100px;
+}
+.main-nav > li > a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 20px;
+}
+
+.navbar{
+    border-top: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    overflow: hidden;
+    padding-bottom: 13px;
+    
+}
+
+.books h2{
+    color: var(--secondary-color);
+}
+
+.spread{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.books{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.book .info{
+    grid-column: 1;
+}
+.book .main-info{
+    grid-column: 2;
+}
+
+
