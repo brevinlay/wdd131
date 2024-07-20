@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: rgb(255, 123, 0);
+  --secondary-color: #381D2A;
+  --accent1-color: #FCDF61;
+  --accent2-color: skyblue;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "IM Fell French Canon SC";
+  --paragraph-font: Lato, Helvetica, sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: var(
+    --primary-color
+  ); /* headlines on a white background */
+  --headline-color-on-color: white; /* headlines on a colored background */
+  --paragraph-color-on-white: var(
+    --primary-color
+  ); /* paragraph text on a white background */
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */
+  --paragraph-background-color: var(--primary-color);
+  --nav-link-color: var(--accent1-color);
+  --nav-background-color: var(--secondary-color);
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: var(--primary-color);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--accent2-color);
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  
+}
+
+.title_bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.title_bar .logo {
+  max-height: 150px;
+}
+.title {
+  font-size: 75px;
+  margin: 0;
+  text-align: center;
+  flex-grow: 1;
+}
+nav {
+  background-color: var(--nav-background-color);
+  line-height: 3em;
+  text-align: flex;
+  font-size: 1.5em;
+}
+nav {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+nav a {
+  
+  min-width: 120px;
+  text-decoration: none;
+  padding: 10px;
+}
+nav a:link,
+nav a:visited {
+  color: var(--nav-link-color);
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  max-height: 100%;
+}
+
+.left {
+  flex: 1;
+  padding: 20px;
+  flex-direction: column;
+  border-right: 2px solid var(--secondary-color);
+}
+
+.right {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+form label{
+  font-family: var(--heading-font);
+  margin-top: 10px;
+  background-color: var(--primary-color);
+  display: inline-block;
+  border-radius: 5px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+
+}
+
+form input[type="text"],
+form textarea,
+form input[type="file"] {
+  margin-top: 5px;
+  padding: 5px;
+  width: 100%;
+}
+
+form input[type="submit"] {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #ff9900;
+}
+
+.right img {
+  max-width: 50%;
+  height: auto;
+}
+.right p {
+  font-size: 25px;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 20px; /* Padding inside the paragraph */
+  border-radius: 15px; /* Adjust the radius to your desired roundness */ 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  font-family: var(--paragraph-font); /* Use the custom font */
+  margin: 20px 0;
+}
+footer {
+  background-color: var(--nav-background-color); /* Adjust as needed */
+  color: var(--nav-link-color); /* Adjust as needed */
+  text-align: center;
+  padding-top: 10px; /* Adjust as needed */
+  margin-top: auto;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Post page for Sunshine Post to post your own good experiences you have had or others experiences.">
+    <meta name="author" content="Brevin Lay">
+    <title>Sunshine Post-Post</title>
+    <link rel="stylesheet" href="post-style.css"/>
+    <script src="post-java.js" defer></script>
+</head>
+<body>
+    <div class="content">
+        
+        <header class= title_bar>  
+            <img src="pictures/just_logo.png" alt="Sunshine Post Logo" class="logo">
+         
+            <h1 class="title">Sunshine Post</h1>
+
+            <img src="pictures/just_logo.png" alt="Sunshine Post Logo" class="logo">
+        </header>
+            
+        <nav>
+        <!-- Navigation links -->
+            <a href="index.html">Home</a>
+            <a href="post.html">Post</a>
+            <a href="site-plan.html">Site Plan</a>
+             
+        </nav> 
+        
+        <main>
+            <div class="main-content">
+            <div class="left">
+                <form action="upload.php" method="post" enctype="multipart/form-data">
+                    <label for="title">Title of the Post:</label>
+                    <input type="text" id="title" name="title" required>
+
+                    <label for="post">The Post:</label>
+                    <textarea id="post" name="post" placeholder="Tell us about your experience" rows="20" required></textarea>
+                    
+                    <label for="pictureUpload">Attach Picture</label>
+                    <div class="form-row">
+                        <input type="file" id="pictureUpload" name="pictureUpload" accept="image/*">
+
+                        <input type="submit" value="Submit Post">
+                    </div>
+                    </form>
+
+            </div>
+            <div class="right">
+
+                <img src="pictures/familyFun.jpg" alt="Sunshine Post Logo" class="logo">
+
+                <p>
+                    Here you can make your post and share the good moments with 
+                    everyone to help uplift others.
+                </p>
+            </div>
+            </div>
+        </main>
+        <footer>
+           
+            <p>&copy; 2024 Sunshine Post. All rights reserved.</p> 
+            
+        </footer>
+    </div> 
+</body>
+</html>
